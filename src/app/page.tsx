@@ -9,7 +9,7 @@ Amplify.configure({ ...awsconfig, ssr: true });
 
 function Home() {
   return (
-    <Authenticator socialProviders={["facebook", "google"]}>
+    <Authenticator>
       {({ signOut, user }) => {
         console.log(user);
         return (
